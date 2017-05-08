@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  get 'packages/index'
+
+  resources :profile
+
   get 'home/index'
 
   devise_for :users
