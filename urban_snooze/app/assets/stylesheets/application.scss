@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap";
+
+html, body {
+  height: 80%;
+  margin: 5px;
+}
+// Google Map
+#map{
+  height: 80%;
+  max-width: 50%;
+  border: 1px solid red;
+  left: 25%;
+  top: 25%;
+}
