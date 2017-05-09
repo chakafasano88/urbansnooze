@@ -1,2 +1,27 @@
-<h1>Profile#edit</h1>
+<h1>My Profile</h1>
 <p>Find me in app/views/profile/edit.html.erb</p>
+<%= form_for @profile do |form| %>
+  <%= form.label :fname, ("First Name: ")%>
+  <%= form.text_field :fname %>
+  <br>
+  <%= form.label :lname, ("Last Name: ") %>
+  <%= form.text_field :lname %>
+  <br>
+  <%= form.label :email, ("Email: ") %>
+  <%= form.text_field :email %>
+  <br>
+  <%= form.label :password, ("Password: ") %>
+  <%= form.password_field :password %>
+  <br>
+  <%= form.label :bday, ("Birthday: ") %>
+  <%= form.text_field :datetime %>
+  <br>
+  <%= form.label :phone_num, ("Phone Number: ") %>
+  <%= form.text_field :integer %>
+  <br>
+  <%= form.label :cc_num, ("Credit Card: ") %>
+  <%= form.text_field :integer %>
+  <br>
+  <%= form.submit ("Confirm") %>
+  <%=link_to("Delete Profile", user_path(@user), method: :delete, data: {confirm: "Do you want to delete your profile?"})%>
+<% end %>
