@@ -33,8 +33,12 @@
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
 
-
     <%= yield %>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%=ENV['GOOGLE_API_KEY']%>&callback=initMap"
+    type="text/javascript"></script>
+
+
 
     <footer>
       <a class="footer-links" href="/contactus">Contact Us</a> |
@@ -42,5 +46,6 @@
       <a class="footer-links" href="/termsofuse">Terms of Use</a> |
       <a class="footer-links"  href="/privacypolicy">Privacy Policy</a> |
     </footer>
+
   </body>
 </html>

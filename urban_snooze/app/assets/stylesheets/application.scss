@@ -14,6 +14,21 @@
  *= require_self
  */
 
+
+@import "bootstrap";
+
+html, body {
+  height: 80%;
+  margin: 5px;
+}
+// Google Map
+#map{
+  height: 80%;
+  max-width: 50%;
+  border: 1px solid red;
+  left: 25%;
+  top: 25%;
+
 nav {
   background-color: white;
   padding: 20px;
@@ -114,4 +129,5 @@ footer {
   color: black;
   font-family: 'Comfortaa';
   margin: 0 auto;
+  color: #beb4c4;
 }
