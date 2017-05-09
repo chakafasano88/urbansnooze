@@ -1,0 +1,133 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+// @import "bootstrap";
+//
+// html, body {
+//   height: 80%;
+//   margin: 5px;
+// }
+// // Google Map
+// #map{
+//   height: 80%;
+//   max-width: 50%;
+//   border: 1px solid red;
+//   left: 25%;
+//   top: 25%;
+// // Nav bar
+nav {
+  background-color: white;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  margin-top: -10px;
+}
+// Home link in nav bar
+#urban-snooze {
+  color: #daaaef;
+  font-family: 'Comfortaa', cursive;
+  text-decoration: none;
+  text-align: left;
+}
+
+#urban-snooze:hover {
+  color: #b988ce;
+}
+
+.navbar-link {
+  color: #88828c;
+  font-family: 'Comfortaa', cursive;
+  text-decoration: none;
+  text-align: right;
+  margin-left: 300px;
+}
+
+.navbar-link:hover {
+  color: #554b5b;
+}
+// the tagline 'relax refresh renew' on homepage in the first div
+#tagline {
+  color: white;
+  font-family: 'Lobster Two', cursive;
+  font-size: 60px;
+  text-align: center;
+}
+// the first div on homepage
+.tagline-div {
+  background-color: #ba87d1;
+  padding: 100px 50px;
+}
+// second div on homepage
+.how-it-works-div {
+  background-color: white;
+  padding: 80px 50px;
+}
+// the text in second div on homepage
+#how-urban-snooze-works {
+  color: #5f5863;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+// the boxes containing the logos on homepage second div
+#locate-box, #calendar-box, #sleep-box {
+  border: 2px solid #88828c;
+  border-radius: 4px;
+}
+
+#locate-box {
+  /*float: left;*/
+  width: 30%;
+}
+
+#calendar-box {
+
+  width: 30%;
+}
+
+#sleep-box {
+  /*float: right;*/
+  width: 30%;
+}
+// icons in the homepage second div
+.icons {
+  font-size: 60px;
+  color: #761fa8 ;
+  border: 2px solid black;
+  display: inline;
+  max-width: 100%;
+}
+// text describing the icons on homepage second div
+.icon-text {
+  font-size: 18px;
+  color: #5f5863;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+footer {
+  background-color: #beb4c4;
+  padding: 50px;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: black;
+  font-family: 'Comfortaa';
+  margin: 0 auto;
+  color: #beb4c4;
+}

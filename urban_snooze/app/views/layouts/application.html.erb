@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AgencyWeek</title>
+    <title>Urban Snooze</title>
     <%= csrf_meta_tags %>
-
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster+Two|Open+Sans" rel="stylesheet">
+    <script src="https://use.fontawesome.com/9d4bd1914c.js"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-
+    <nav>
+    <!-- <p class="navbar-text pull-right"> -->
+      <%= link_to 'urban snooze       ', home_index_path,  :id => 'urban-snooze' %>
+      <%= link_to 'request naptime      ', appointments_path, :class => 'navbar-link' %>
+      <% if user_signed_in? %>
+        <!-- Logged in as <strong><%= current_user.email %></strong>. -->
+        <%= link_to "logout      ", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+      <% else %>
+        <%= link_to "sign up     ", new_user_registration_path, :class => 'navbar-link'  %>
+        <%= link_to "log in      ", new_user_session_path, :class => 'navbar-link'  %>
+      <% end %>
+    </nav>
+    <!-- </p> -->
+    <br>
+    <br>
+    <br>
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
     <% end %>
@@ -17,23 +33,19 @@
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
 
-        <p class="navbar-text pull-right">
-    <% if user_signed_in? %>
-      Logged in as <strong><%= current_user.email %></strong>.
-      <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-      <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-    <% else %>
-      <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-      <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-    <% end %>
-    </p>
-
-
-
-
-
-
-
     <%= yield %>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%=ENV['GOOGLE_API_KEY']%>&callback=initMap"
+    type="text/javascript"></script>
+
+
+
+    <footer>
+      <a class="footer-links" href="/contactus">Contact Us</a> |
+      <a class="footer-links"  href="/faq">FAQ</a> |
+      <a class="footer-links" href="/termsofuse">Terms of Use</a> |
+      <a class="footer-links"  href="/privacypolicy">Privacy Policy</a> |
+    </footer>
+
   </body>
 </html>
