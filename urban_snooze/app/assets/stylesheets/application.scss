@@ -39,6 +39,8 @@ nav {
   padding: 20px;
   width: 100%;
   margin-top: -10px;
+  position: fixed;
+  box-shadow: 6px 5px 4px #a19fa3;
 }
 // the link in nav for home
 #urban-snooze {
@@ -79,7 +81,7 @@ nav {
 }
 // the second div on home page
 .how-it-works-div {
-  background-color: #e4e3e5;
+  background-color: #ebeaed;
   padding: 80px 50px;
 }
 // second div header text
@@ -146,6 +148,18 @@ footer {
   display: inline;
   margin: 0 auto;
   text-align: center;
+}
+// the div containing social media icons
+#media-links-footer-div {
+  display: inline;
+  margin: 0 auto;
+  text-align: center;
+}
+// the actual icons for social media
+#media-link {
+  padding: 10px;
+  color: #761fa8;
+  text-decoration: none;
 }
 // the links in the footer...duh
 .footer-links {
