@@ -17,12 +17,10 @@
 
 @import "bootstrap";
 
-
 html, body {
   height: 80%;
   margin: 5px;
 }
-
 // Google Map
 #map {
   height: 80%;
@@ -30,6 +28,10 @@ html, body {
   border: 1px solid red;
   left: 25%;
   top: 25%;
+}
+// only background color for body
+body {
+  background-color: #d6d4d8;
 }
 // the nav bar
 nav {
@@ -60,7 +62,9 @@ nav {
 
 .navbar-link:hover {
   color: #554b5b;
+  text-decoration: none;
 }
+// items on the homepage
 // the tagline in the first div on home page
 #tagline {
   color: white;
@@ -108,7 +112,7 @@ nav {
 // the icon images in second div homepage
 .icons {
   font-size: 60px;
-  color: #761fa8 ;
+  color: #761fa8;
   border: 2px solid black;
   display: inline;
   max-width: 100%;
@@ -120,16 +124,38 @@ nav {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
+
+// appointments page
+// request naptime header
+#naptime-header {
+  font-family: 'Gruppo', cursive;
+  font-size: 38px;
+  text-align: center;
+  color: #761fa8;
+}
+
 // footer...duh
 footer {
   background-color: #beb4c4;
   padding: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+// div in footer for the links
+#footer-div {
+  display: inline;
+  margin: 0 auto;
+  text-align: center;
 }
 // the links in the footer...duh
 .footer-links {
   text-decoration: none;
-  color: black;
+  color: #111111;
   font-family: 'Comfortaa';
   margin: 0 auto;
-  color: #beb4c4;
+}
+
+.footer-links:hover {
+  color: #761fa8;
+  text-decoration: none;
 }
