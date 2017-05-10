@@ -79,45 +79,58 @@ nav {
   background-color: #ba87d1;
   padding: 100px 50px;
 }
+// START HERE
 // the second div on home page
 .how-it-works-div {
+  position: relative;
   background-color: #ebeaed;
   padding: 80px 50px;
+  height: 400px;
+  z-index: -1;
+
 }
 // second div header text
 #how-urban-snooze-works {
   color: #5f5863;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
 }
 // the icons boxes-second div home page
 #locate-box, #calendar-box, #sleep-box {
-  border: 2px solid #88828c;
-  border-radius: 4px;
+
 }
 
 #locate-box {
-  /*float: left;*/
+  position: relative;
+  bottom: 10px;
+  margin-right: 10px;
+  text-align: center;
   width: 30%;
+  float: left;
+
 }
 
 #calendar-box {
-
+  text-align: center;
   width: 30%;
+  float: left;
 }
 
 #sleep-box {
   /*float: right;*/
+  margin-left: 10px;
+  text-align: center;
   width: 30%;
+  float: left;
 }
 // the icon images in second div homepage
 .icons {
+  clear: both;
   font-size: 60px;
   color: #761fa8;
-  border: 2px solid black;
-  display: inline;
   max-width: 100%;
+  display: inline;
 }
 //the text under icons-second div homepage
 .icon-text {
@@ -126,7 +139,7 @@ nav {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
-
+// STOP HERE
 // appointments page
 // request naptime header
 #naptime-header {
