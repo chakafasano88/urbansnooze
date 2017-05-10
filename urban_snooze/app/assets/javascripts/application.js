@@ -20,28 +20,32 @@ var map;
   function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 40.7831, lng: -73.9712},
-      zoom: 13
+      zoom: 11
     });
   }
 
 // Map Display
 function initMap() {
 //  Tribeca parameters
-  var tribeca = {lat: 40.7163, lng: -74.0086};
+  var nyc = {lat: 40.7359, lng: -73.9911};
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 13,
-    center: tribeca
+    zoom: 12,
+    center: nyc
   });
 // Tribeca marker
   var marker = new google.maps.Marker({
-    position: tribeca,
+    position: nyc,
     map: map
   });
+
   // Array of locations, which are looped to display multiple markers
   var locations = [
     ['Tribeca',  40.7163, -74.0086, 1],
     ['Soho', 40.7233, -74.0030, 2],
-    ['Fidi', 40.7075, -74.0113, 3]
+    ['Fidi', 40.7075, -74.0113, 3],
+    ['Times Square', 40.7589, -73.9851, 4],
+    ['Union Square', 40.7359, -73.9911, 5],
+    ['Midtown', 40.7484, -73.9857, 6]
   ];
   // Info window content
   var infoWindowContent = [
@@ -51,7 +55,13 @@ function initMap() {
     '<h3>Urban Snooze Soho</h3>' +
     '</div>'],
     ['<div class="info_content">' +
-    '<h3>Urban Snooze</h3>' +
+    '<h3>Urban Snooze Fidi</h3>' +
+    '</div>'],
+    ['<div class="info_content">' +
+    '<h3>Urban Snooze Times Square</h3>' +
+    '</div>'],
+    ['<div class="info_content">' +
+    '<h3>Urban Snooze Union Square</h3>' +
     '</div>']
 ];
 
