@@ -14,43 +14,31 @@
  *= require_self
  */
 
-<<<<<<< HEAD
-=======
 
-<<<<<<< HEAD
 // @import "bootstrap";
-=======
->>>>>>> ed1674c47209353e1cc6c32215e78b858e93abc7
-@import "bootstrap";
->>>>>>> 7c6b75c2225b94ef340e764f0a41b2d41c618a91
+
 
 html, body {
   height: 80%;
   margin: 5px;
 }
-<<<<<<< HEAD
-=======
+
 // Google Map
-#map{
+#map {
   height: 80%;
   max-width: 50%;
   border: 1px solid red;
   left: 25%;
   top: 25%;
-<<<<<<< HEAD
 }
-=======
->>>>>>> ed1674c47209353e1cc6c32215e78b858e93abc7
->>>>>>> 7c6b75c2225b94ef340e764f0a41b2d41c618a91
-
+// the nav bar
 nav {
   background-color: white;
   padding: 20px;
-  position: fixed;
   width: 100%;
   margin-top: -10px;
 }
-
+// the link in nav for home
 #urban-snooze {
   color: #daaaef;
   font-family: 'Comfortaa', cursive;
@@ -61,7 +49,7 @@ nav {
 #urban-snooze:hover {
   color: #b988ce;
 }
-
+// the other nav links
 .navbar-link {
   color: #88828c;
   font-family: 'Comfortaa', cursive;
@@ -73,7 +61,7 @@ nav {
 .navbar-link:hover {
   color: #554b5b;
 }
-
+// the tagline in the first div on home page
 #tagline {
   color: white;
   font-family: 'Lobster Two', cursive;
@@ -85,19 +73,19 @@ nav {
   background-color: #ba87d1;
   padding: 100px 50px;
 }
-
+// the second div on home page
 .how-it-works-div {
   background-color: #e4e3e5;
   padding: 80px 50px;
 }
-
+// second div header text
 #how-urban-snooze-works {
   color: #5f5863;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   font-size: 30px;
 }
-
+// the icons boxes-second div home page
 #locate-box, #calendar-box, #sleep-box {
   border: 2px solid #88828c;
   border-radius: 4px;
@@ -117,7 +105,7 @@ nav {
   /*float: right;*/
   width: 30%;
 }
-
+// the icon images in second div homepage
 .icons {
   font-size: 60px;
   color: #761fa8 ;
@@ -125,19 +113,19 @@ nav {
   display: inline;
   max-width: 100%;
 }
-
+//the text under icons-second div homepage
 .icon-text {
   font-size: 18px;
   color: #5f5863;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
-
+// footer...duh
 footer {
   background-color: #beb4c4;
   padding: 50px;
 }
-
+// the links in the footer...duh
 .footer-links {
   text-decoration: none;
   color: black;
