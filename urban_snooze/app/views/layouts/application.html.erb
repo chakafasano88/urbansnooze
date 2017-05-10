@@ -13,7 +13,7 @@
     <nav>
     <!-- <p class="navbar-text pull-right"> -->
       <%= link_to 'Urban Snooze       ', home_index_path,  :id => 'urban-snooze' %>
-      <%= link_to 'Request Naptime      ', appointments_path, :class => 'navbar-link' %>
+      <%= link_to 'Request Naptime      ', new_appointment_path, :class => 'navbar-link' %>
       <% if user_signed_in? %>
         Logged in as <strong><%= current_user.email %></strong>.
         <%= link_to "Logout      ", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
@@ -33,30 +33,13 @@
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
 
-<<<<<<< HEAD
-        <p class="navbar-text pull-right">
-    <% if user_signed_in? %>
-      Logged in as <strong><%= current_user.email %></strong>.
-      <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-      <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-    <% else %>
-      <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-      <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-    <% end %>
-    </p>
-
-
 
     <%= yield %>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%=ENV['GOOGLE_API_KEY']%>&callback=initMap"
     type="text/javascript"></script>
 
-=======
-
-    <%= yield %>
     <footer>
     </footer>
->>>>>>> ce10bd36d61142b70cf4b0ce8171835530243f60
   </body>
 </html>

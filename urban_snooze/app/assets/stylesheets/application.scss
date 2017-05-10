@@ -14,7 +14,6 @@
  *= require_self
  */
 
-<<<<<<< HEAD:urban_snooze/app/assets/stylesheets/application.scss
 @import "bootstrap";
 
 html, body {
@@ -28,7 +27,7 @@ html, body {
   border: 1px solid red;
   left: 25%;
   top: 25%;
-=======
+}
 nav {
   background-color: white;
   padding: 20px;
@@ -75,5 +74,5 @@ nav {
 .icons {
   font-size: 60px;
   color: #beb4c4;
->>>>>>> ce10bd36d61142b70cf4b0ce8171835530243f60:urban_snooze/app/assets/stylesheets/application.css
+
 }
