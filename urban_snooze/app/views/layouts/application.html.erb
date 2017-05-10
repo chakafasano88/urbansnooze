@@ -13,7 +13,7 @@
     <nav>
     <!-- <p class="navbar-text pull-right"> -->
       <%= link_to 'urban snooze       ', home_index_path,  :id => 'urban-snooze' %>
-      <%= link_to 'request naptime      ', appointments_path, :class => 'navbar-link' %>
+      <%= link_to 'request naptime      ', new_appointment_path, :class => 'navbar-link' %>
       <% if user_signed_in? %>
         <!-- Logged in as <strong><%= current_user.email %></strong>. -->
         <%= link_to "logout      ", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
