@@ -5,8 +5,7 @@ class AppointmentsController < ApplicationController
   def create
     @appointment = Appointment.new(
     location: params[:appointment][:location],
-    time: params[:appointment][:date],
-    date: params[:appointment][:time]
+    datetime: params[:appointment][:datetime],
     )
 
     if @appointment.save
