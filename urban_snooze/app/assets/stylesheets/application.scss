@@ -14,12 +14,26 @@
  *= require_self
  */
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ed1674c47209353e1cc6c32215e78b858e93abc7
 @import "bootstrap";
 
 html, body {
   height: 80%;
   margin: 5px;
 }
+<<<<<<< HEAD
+=======
+// Google Map
+#map{
+  height: 80%;
+  max-width: 50%;
+  border: 1px solid red;
+  left: 25%;
+  top: 25%;
+>>>>>>> ed1674c47209353e1cc6c32215e78b858e93abc7
 
 nav {
   background-color: white;
@@ -33,18 +47,28 @@ nav {
   color: #daaaef;
   font-family: 'Comfortaa', cursive;
   text-decoration: none;
+  text-align: left;
+}
+
+#urban-snooze:hover {
+  color: #b988ce;
 }
 
 .navbar-link {
-  color: #daaaef;
+  color: #88828c;
   font-family: 'Comfortaa', cursive;
   text-decoration: none;
   text-align: right;
+  margin-left: 300px;
+}
+
+.navbar-link:hover {
+  color: #554b5b;
 }
 
 #tagline {
   color: white;
-  font-family: monospace;
+  font-family: 'Lobster Two', cursive;
   font-size: 60px;
   text-align: center;
 }
@@ -60,11 +84,56 @@ nav {
 }
 
 #how-urban-snooze-works {
-  color: #beb4c4;
-  font-family: cursive;
+  color: #5f5863;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+#locate-box, #calendar-box, #sleep-box {
+  border: 2px solid #88828c;
+  border-radius: 4px;
+}
+
+#locate-box {
+  /*float: left;*/
+  width: 30%;
+}
+
+#calendar-box {
+
+  width: 30%;
+}
+
+#sleep-box {
+  /*float: right;*/
+  width: 30%;
 }
 
 .icons {
   font-size: 60px;
+  color: #761fa8 ;
+  border: 2px solid black;
+  display: inline;
+  max-width: 100%;
+}
+
+.icon-text {
+  font-size: 18px;
+  color: #5f5863;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+footer {
+  background-color: #beb4c4;
+  padding: 50px;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: black;
+  font-family: 'Comfortaa';
+  margin: 0 auto;
   color: #beb4c4;
 }
