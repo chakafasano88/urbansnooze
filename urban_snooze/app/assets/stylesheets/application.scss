@@ -137,6 +137,11 @@ nav {
   display: inline;
 }
 //the text under icons-second div homepage
+.tagline-2 {
+  color: #761fa8;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
 .icon-text {
   font-size: 18px;
   color: #5f5863;
@@ -144,12 +149,6 @@ nav {
   text-align: center;
 }
 
-.tagline-2 {
-  color: #761fa8;
-  font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
-}
-// STOP HERE
 
 // appointments page
 // "REQUST NAPTIME" HEADER
@@ -164,15 +163,24 @@ nav {
 }
 // the header on the your appointments create page
 #appts-header {
-  font-family: 'Gruppo', cursive;
+  font-family: 'Comfortaa', cursive;
   font-size: 38px;
   text-align: center;
-  color: #761fa8;
+  color: white;
+  background-color: #ba87d1;
   bottom: 151px;
+  padding: 30px;
 }
+// the div that contains the appt on appt create pg
+#appt-list-div {
+  background-color: #ebeaed;
+  padding: 80px 50px;
+  height: 250px;
+}
+// the text on appt create page that displays the appt
 .appt-list {
   font-family: 'Raleway', sans-serif;
-
+  color: #761fa8;
 }
 // footer...duh
 footer {

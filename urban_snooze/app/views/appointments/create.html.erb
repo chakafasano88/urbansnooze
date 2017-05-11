@@ -1,7 +1,9 @@
-<h1 id="appts-header">Your Appointments</h1>
+<div id="appts-header">
+  <h1>Your Appointments</h1>
+</div>
 <hr>
-<ul>
-  <li class="appt-list">
+<div id="appt-list-div">
+  <p class="appt-list">
     <strong>Location: </strong><%= @appointment.location %>
     <br>
     <strong>Month: </strong><%= @appointment.month %>
@@ -9,5 +11,5 @@
     <strong>Day: </strong><%= @appointment.day %>
     <br>
     <strong>Time: </strong><%= @appointment.when %>
-  </li>
-</ul>
+  </p>
+</div>
