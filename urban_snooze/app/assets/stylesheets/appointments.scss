@@ -9,17 +9,22 @@
   max-width: 50%;
   border: 1px solid red;
   left: 25%;
-  top: 25%;
+  top: 200px;
+  z-index: 1;
 }
 
 form#new_appointment.new_appointment{
   position: relative;
   display: inline-block;
   text-align: center;
-  border: 3px solid #551da6;
+  background-color: white;
   width: 60%;
   height: 400px;
   left: 20%;
   padding-top: 150px;
   font-size: 1.3em;
+  box-shadow: 10px 10px 5px gray;
+  margin-top: 25px;
+  // z-index: -1;
+
 }
