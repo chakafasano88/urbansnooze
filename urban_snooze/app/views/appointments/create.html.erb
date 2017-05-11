@@ -1,1 +1,13 @@
-<h1>Your Appointments</h1>
+<h1 id="appts-header">Your Appointments</h1>
+<hr>
+<ul>
+  <li class="appt-list">
+    <strong>Location: </strong><%= @appointment.location %>
+    <br>
+    <strong>Month: </strong><%= @appointment.month %>
+    <br>
+    <strong>Day: </strong><%= @appointment.day %>
+    <br>
+    <strong>Time: </strong><%= @appointment.when %>
+  </li>
+</ul>
