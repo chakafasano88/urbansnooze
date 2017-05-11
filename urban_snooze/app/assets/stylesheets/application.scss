@@ -48,6 +48,8 @@ nav {
   font-family: 'Comfortaa', cursive;
   text-decoration: none;
   text-align: left;
+  font-size: 30px;
+  bottom: 20px;
 }
 
 #urban-snooze:hover {
@@ -58,8 +60,11 @@ nav {
   color: #88828c;
   font-family: 'Comfortaa', cursive;
   text-decoration: none;
-  text-align: right;
-  margin-left: 300px;
+  float: right;
+  margin-left: 30px;
+  margin-right: 30px;
+  position: relative;
+  top: 20px;
 }
 
 .navbar-link:hover {
@@ -77,9 +82,8 @@ nav {
 
 .tagline-div {
   background-color: #ba87d1;
-  padding: 100px 50px;
+  padding: 140px 50px;
 }
-// START HERE
 // the second div on home page
 .how-it-works-div {
   position: relative;
@@ -139,19 +143,24 @@ nav {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
+
 .tagline-2 {
   color: #761fa8;
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
 }
 // STOP HERE
+
 // appointments page
-// request naptime header
+// "REQUST NAPTIME" HEADER
 #naptime-header {
+  position: relative;
   font-family: 'Gruppo', cursive;
   font-size: 38px;
   text-align: center;
   color: #761fa8;
+  border: 1px solid red;
+  bottom: 151px;
 }
 
 // footer...duh

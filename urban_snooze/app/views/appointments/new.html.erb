@@ -1,7 +1,9 @@
-<h1 id="naptime-header">Request Naptime</h1>
-<br>
+
+
 <!-- Form for making an appointment -->
 <%= form_for @appointment do |f| %>
+<h1 id="naptime-header">Request Naptime</h1>
+<br>
   <strong><%= f.label :location %>:</strong>
   <%= f.select :location, [['Tribeca'],['Soho'],['Fidi'],['Times Square'],['Union Square']] %><strong><%= f.label :date %>:</strong>
   <%= f.select :when, [['January'],['February'],['March'],['April'],['May'],['June'],['July'],['August'],['September'],['October'],['November'],['December']] %>
