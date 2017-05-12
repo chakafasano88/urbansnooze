@@ -5,7 +5,7 @@
 <h1 class="naptime-header">Request Naptime</h1>
 <br>
 <strong><%= f.label :location %>:</strong>
-<%= f.select :location, [['Tribeca'],['Soho'],['Fidi'],['Times Square'],['Union Square']] %>
+<%= f.select :location, [['Tribeca'],['Soho'],['Fidi'],['Times Square'],['Union Square']], :id => "location_choice" %>
 <br>
 <strong><%= f.label :month %>:</strong>
 <%= f.select :month, [['January'],['February'],['March'],['April'],['May'],['June'],['July'],['August'],['September'],['October'],['November'],['December']] %>
