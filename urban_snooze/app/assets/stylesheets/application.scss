@@ -89,7 +89,7 @@ nav {
   position: relative;
   background-color: #ebeaed;
   padding: 80px 50px;
-  height: 400px;
+  height: 450px;
   z-index: -1;
 
 }
@@ -152,15 +152,15 @@ nav {
 
 // appointments page
 // "REQUST NAPTIME" HEADER
-#naptime-header {
-  position: relative;
-  font-family: 'Gruppo', cursive;
+.naptime-header {
+  font-family: 'Comfortaa', cursive;
   font-size: 38px;
   text-align: center;
-  color: #761fa8;
-  border: 1px solid red;
-  bottom: 151px;
-}
+  color: white;
+  margin-top: 10px;
+  background-color: #761fa8;
+  }
+
 // the header on the your appointments create page
 #appts-header {
   font-family: 'Comfortaa', cursive;
@@ -180,6 +180,7 @@ nav {
 // the text on appt create page that displays the appt
 .appt-list {
   font-family: 'Raleway', sans-serif;
+  font-size: 20px;
   color: #761fa8;
 }
 // footer...duh
@@ -208,6 +209,9 @@ footer {
   text-decoration: none;
 }
 // the links in the footer...duh
+footer {
+  margin-top: 55px;
+}
 .footer-links {
   text-decoration: none;
   color: #111111;

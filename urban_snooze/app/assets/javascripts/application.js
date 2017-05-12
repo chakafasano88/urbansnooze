@@ -40,9 +40,9 @@ function initMap() {
   ];
 
   // Drop down list array
-  var locationChoice = document.getElementById('location_choice')
-
-  marker.setAttribute('style', '');
+  // var locationChoice = document.getElementById('location_choice')
+  //
+  // marker.setAttribute('style', '');
 
 // Adds onlick INFO WINDOW to marker
   var infoWindow = new google.maps.InfoWindow();
@@ -61,9 +61,9 @@ function initMap() {
         infoWindow.open(map, marker);
       }
     })(marker, i));
-    locationChoice.querySelector('onclick', function(event) {
-        addMarker(event.latLng);
-      });
+    // locationChoice.querySelector('onclick', function(event) {
+    //     addMarker(event.latLng);
+    //   });
     // Loop ends
   }
 }
