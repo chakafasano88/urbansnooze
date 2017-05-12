@@ -23,48 +23,31 @@ var map;
   //   });
   // }
 
-// Map Display
+// Map Display on Request Naptime page
 function initMap() {
-//  Tribeca parameters
+//  Center point
   var nyc = {lat: 40.7359, lng: -73.9911};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
     center: nyc
   });
-// Tribeca marker
+  // Marker variable to allow display of markers
   var marker = new google.maps.Marker({
     position: nyc,
     map: map
   });
 
-  // Array of locations, which are looped to display multiple markers
+  // Array of locations to display multiple markers with information in their infowindow
   var locations = [
-    ['Urban Snooze Tribeca',  40.7163, -74.0086, 1],
-    ['Urban Snooze Soho', 40.7233, -74.0030, 2],
-    ['Urban Snooze Fidi', 40.7075, -74.0113, 3],
-    ['Urban Snooze Times Square', 40.7589, -73.9851, 4],
-    ['Urban Snooze Union Square', 40.7359, -73.9911, 5],
-    ['Urban Snooze Midtown', 40.7484, -73.9857, 6]
+    ['Urban Snooze Tribeca, 1046 W Broadway, New York, NY 10013',  40.7163, -74.0086, 1],
+    ['Urban Snooze Soho, 981 Broome St, New York, NY 10012', 40.7233, -74.0030, 2],
+    ['Urban Snooze Fidi, 90 John St, New York, NY 10038', 40.7075, -74.0113, 3],
+    ['Urban Snooze Times Square, 51 7th Ave, New York, NY 10036', 40.7589, -73.9851, 4],
+    ['Urban Snooze Union Square, 423 E 15th St, New York, NY 10003', 40.7359, -73.9911, 5],
+    ['Urban Snooze Midtown, 1100 34th St, New York, NY 10118', 40.7484, -73.9857, 6]
   ];
-  // Info window content
-  // var infoWindowContent = [
-  //   ['<div class="info_content">' +
-  //   '<h3>Urban Snooze Tribeca</h3>' + '</div>'],
-  //   ['<div class="info_content">' +
-  //   '<h3>Urban Snooze Soho</h3>' +
-  //   '</div>'],
-  //   ['<div class="info_content">' +
-  //   '<h3>Urban Snooze Fidi</h3>' +
-  //   '</div>'],
-  //   ['<div class="info_content">' +
-  //   '<h3>Urban Snooze Times Square</h3>' +
-  //   '</div>'],
-  //   ['<div class="info_content">' +
-  //   '<h3>Urban Snooze Union Square</h3>' +
-  //   '</div>']
-  // ];
 
-  // Add multiple markers to map
+  // Add multiple markers to map , which are looped
   var infoWindow = new google.maps.InfoWindow();
     var marker, i
     for (i = 0; i < locations.length; i++) {
