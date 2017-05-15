@@ -16,9 +16,8 @@
 //= require_tree .
 
 var map;
-<<<<<<< HEAD
 // Map Display
-=======
+
   // function initMap() {
   //   map = new google.maps.Map(document.getElementById('map'), {
   //     center: {lat: 40.7831, lng: -73.9712},
@@ -27,7 +26,6 @@ var map;
   // }
 
 // Map Display on Request Naptime page
->>>>>>> 34a63fc3a5cff6c41e1ab3a2de4c00549002ae27
 function initMap() {
 //  Center point
   var nyc = {lat: 40.7359, lng: -73.9911};
@@ -40,7 +38,6 @@ function initMap() {
     map: map
   });
 
-<<<<<<< HEAD
  // Array of locations, which are looped to display multiple markers
   var locations = [
     ["Urban Snooze Tribeca",  40.7163, -74.0086, 1],
@@ -57,7 +54,6 @@ function initMap() {
   // marker.setAttribute('style', '');
 
 // Adds onlick INFO WINDOW to marker
-=======
   // Array of locations to display multiple markers with information in their infowindow
   var locations = [
     ['Urban Snooze Tribeca, 1046 W Broadway, New York, NY 10013',  40.7163, -74.0086, 1],
@@ -69,7 +65,6 @@ function initMap() {
   ];
 
   // Add multiple markers to map , which are looped
->>>>>>> 34a63fc3a5cff6c41e1ab3a2de4c00549002ae27
   var infoWindow = new google.maps.InfoWindow();
 
    // Adds multiple MARKERS to map
