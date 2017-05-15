@@ -3,15 +3,19 @@
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
+
+
+
 # HERE
 default: &default
   adapter: postgresql
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
-
+  pool: <%= ENV.fetch(“RAILS_MAX_THREADS”) { 5 } %>
 
 development:
+  <<: *default
   database: urban_snooze_development
 
 # Warning: The database defined as “test” will be erased and
@@ -31,5 +35,5 @@ test:
 production:
   <<: *default
   database: urban_snooze_production
-  username: urban_snooze
-  password: <%= ENV['GOOGLE_API_KEY'] %>
+  username: urban_snooze_development
+  password: <%= ENV[‘NOTE_TAKER_DATABASE_PASSWORD’] %>
