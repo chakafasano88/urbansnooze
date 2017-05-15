@@ -22,13 +22,11 @@ class AppointmentsController < ApplicationController
     else
       flash[:alert] = "Invalid Information"
       redirect_to '/'
-
     end
   end
 
   def new
     @appointment = Appointment.new
-
   end
 
   def show

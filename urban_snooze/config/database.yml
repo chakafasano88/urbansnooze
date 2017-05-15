@@ -34,6 +34,8 @@ test:
 
 production:
   <<: *default
-  database: urban_snooze_production
-  username: urban_snooze_development
-  password: <%= ENV[‘NOTE_TAKER_DATABASE_PASSWORD’] %>
+  adapter: postgresql
+  enabling: unicode
+  database: myapp
+  username: username
+  password: ENV[GOOGLE_API_KEY]
