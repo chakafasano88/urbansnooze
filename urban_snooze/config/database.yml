@@ -12,7 +12,7 @@ default: &default
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: <%= ENV.fetch(“RAILS_MAX_THREADS”) { 5 } %>
+
 
 development:
   <<: *default
@@ -34,6 +34,8 @@ test:
 
 production:
   <<: *default
+  adapter: postgresql
+  enabling: unicode
   database: urban_snooze_production
   username: urban_snooze
   password: <%= ENV['GOOGLE_API_KEY'] %>
