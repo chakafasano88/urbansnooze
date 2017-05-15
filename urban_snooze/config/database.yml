@@ -26,4 +26,4 @@ production:
   enabling: unicode
   database: myapp
   username: username
-  password: ENV[GOOGLE_API_KEY]
+  password: ENV[GOOGLE_API_KEY  ]
