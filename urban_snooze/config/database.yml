@@ -34,8 +34,6 @@ test:
 
 production:
   <<: *default
-  adapter: postgresql
-  enabling: unicode
-  database: myapp
-  username: username
-  password: ENV[GOOGLE_API_KEY]
+  database: urban_snooze_production
+  username: urban_snooze
+  password: <%= ENV['GOOGLE_API_KEY'] %>
