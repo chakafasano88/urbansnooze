@@ -9,10 +9,9 @@ default: &default
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: <%= ENV.fetch (5)  %>
+
 
 development:
-  <<: *default
   database: urban_snooze_development
 
 # Warning: The database defined as “test” will be erased and
