@@ -16,15 +16,6 @@
 //= require_tree .
 
 var map;
-// Map Display
-
-  // function initMap() {
-  //   map = new google.maps.Map(document.getElementById('map'), {
-  //     center: {lat: 40.7831, lng: -73.9712},
-  //     zoom: 11
-  //   });
-  // }
-
 // Map Display on Request Naptime page
 function initMap() {
 //  Center point
@@ -48,12 +39,6 @@ function initMap() {
     ["Urban Snooze Midtown", 40.7484, -73.9857, 6]
   ];
 
-  // Drop down list array
-  // var locationChoice = document.getElementById('location_choice')
-  //
-  // marker.setAttribute('style', '');
-
-// Adds onlick INFO WINDOW to marker
   // Array of locations to display multiple markers with information in their infowindow
   var locations = [
     ['Urban Snooze Tribeca, 1046 W Broadway, New York, NY 10013',  40.7163, -74.0086, 1],
@@ -81,9 +66,5 @@ function initMap() {
         infoWindow.open(map, marker);
       }
     })(marker, i));
-    // locationChoice.querySelector('onclick', function(event) {
-    //     addMarker(event.latLng);
-    //   });
-    // Loop ends
   }
 }
